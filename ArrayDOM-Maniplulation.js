@@ -1,3 +1,4 @@
+
 let h1Element = document.createElement('h1');
 h1Element.textContent = "Web Technologies";
 let containerElement = document.getElementById("mycontainer");
@@ -10,3 +11,9 @@ btnElement.onclick = function(){
   h1Element.classList.add("heading");
  }
 containerElement.appendChild(btnElement);
+let removeStylesBtnElement = document.createElement('button');
+removeStylesBtnElement.textContent = "remove styles";
+removeStylesBtnElement.onclick = function(){
+  h1Element.classList.remove("heading");
+ };
+document.getElementById("mycontainer").appendChild(removeStylesBtnElement);
